@@ -1,0 +1,202 @@
+/* CSS Document */
+
+*{margin:0;padding:0;}
+
+
+#book3function{
+	display:none;}
+
+html, body {
+ overflow: hidden;
+ margin: 0;
+ padding: 0;
+ height: 100%;
+}
+
+#nightstyle3{
+	 background-color:#000; 
+	 filter:alpha(opacity=50); 
+	 -moz-opacity:0.5; 
+	 opacity:0.5; 
+	 position:absolute; 
+	 left:0px; 
+	 top:0px; 
+	 display:none;
+	 pointer-events:none;
+	}
+#book2{
+display:none;
+position:absolute;
+left:0;
+top:0;
+width:100%;
+height:100%;
+color:#fff;
+margin:0 0 0 0;
+
+}
+#book2function{
+	display:none;}
+#book2clickarea{
+	display:none;}
+#book2 div{
+
+width:100%;
+
+height:100%;
+
+
+background:#77521d;
+
+cursor:e-resize;
+
+
+position:absolute;
+
+}
+
+#book2 div img{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+.book2btn1,.book2btn2,.book2btn3,.book2btn4{
+	position:absolute;
+	top:0;
+	width:7%;
+	height:7%;}
+.book2btn1 img{
+	height:100%;
+	width:100%;
+}
+.book2btn2 img{
+	height:100%;
+	width:100%;
+}
+.book2btn3 img{
+	height:100%;
+	width:100%;
+}
+.book2btn4 img{
+	height:100%;
+	width:100%;
+}
+
+.book2word1,.book2word2,.book2word3{
+	position:absolute;
+	top:15%;
+	width:8%;
+	height:8%;}
+.book2word4{
+	position:absolute;
+	top:14%;
+	width:12%;}
+.book2word1 img{
+	height:100%;
+	width:100%;
+}
+.book2word2 img{
+	height:100%;
+	width:100%;
+}
+.book2word3 img{
+	height:100%;
+	width:100%;
+}
+.book2word4 img{
+	height:100%;
+	width:100%;
+}
+
+.book2btn5,.book2btn6,.book2btn7,.book2btn8{
+	position:absolute;
+	top:50%;
+	width:7%;
+	height:7%;}
+.book2btn5 img{
+	height:100%;
+	width:100%;
+}
+.book2btn6 img{
+	height:100%;
+	width:100%;
+}
+.book2btn7 img{
+	height:100%;
+	width:100%;
+}
+.book2btn8 img{
+	height:100%;
+	width:100%;
+}
+.book2word5,.book2word6,.book2word7,.book2word8{
+	position:absolute;
+	top:65%;
+	width:8%;
+	height:8%;}
+.book2word5 img{
+	height:100%;
+	width:100%;
+}
+.book2word6 img{
+	height:100%;
+	width:100%;
+}
+.book2word7 img{
+	height:100%;
+	width:100%;
+}
+.book2word8 img{
+	height:100%;
+	width:100%;
+}
+
+#book2start{
+	position:absolute;
+	top:70%;
+	left:30%;
+	height:20%;
+	width:10%;}
+#book2cancle{
+	position:absolute;
+	top:70%;
+	left:53%;
+	height:20%;
+	width:10%;}
+#book2font1{
+	position:absolute;
+	top:40%;
+	left:30%;
+	height:20%;
+	width:15%;}
+#book2font2{
+	position:absolute;
+	top:40%;
+	left:53%;
+	height:20%;
+	width:15%;}
+#book2bg1{
+	position:absolute;
+	top:40%;
+	left:30%;
+	height:20%;
+	width:15%;}
+#book2bg2{
+	position:absolute;
+	top:40%;
+	left:53%;
+	height:20%;
+	width:15%;}
+#book2pagesure{
+	position:absolute;
+	top:60%;
+	left:30%;
+	height:20%;
+	width:15%;}
+#book2pagecancel{
+	position:absolute;
+	top:60%;
+	left:52%;
+	height:20%;
+	width:15%;}

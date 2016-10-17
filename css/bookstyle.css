@@ -1,0 +1,45 @@
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative
+}
+
+#nightstyle{
+	 width:100%; 
+	 height:100%; 
+	 background-color:#000; 
+	 filter:alpha(opacity=50); 
+	 -moz-opacity:0.5; 
+	 opacity:0.5; 
+	 position:absolute; 
+	 left:0px; 
+	 top:0px; 
+	 display:none;
+	 pointer-events:none;}
+	 
+#nightstyle2{
+	 width:100%; 
+	 height:100%; 
+	 background-color:#000; 
+	 filter:alpha(opacity=50); 
+	 -moz-opacity:0.5; 
+	 opacity:0.5; 
+	 position:absolute; 
+	 left:0px; 
+	 top:0px; 
+	 display:none;}
+ 
+
+#peopleread{
+	/* background-image:url(../pics/voice.jpg); */
+	 width:80px;
+	 height:20px;}
+	 
+#peopleread2{
+	/* background-image:url(../pics/voice.jpg); */
+	 width:80px;
+	 height:20px;}

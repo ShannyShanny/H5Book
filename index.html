@@ -1,0 +1,1499 @@
+﻿<!doctype html>
+<!--[if lt IE 7 ]>
+<html lang="en" class="ie6">
+
+<![endif]--><!--[if IE 7 ]>
+<html lang="en" class="ie7">
+
+<![endif]--><!--[if IE 8 ]>
+<html lang="en" class="ie8">
+
+<![endif]--><!--[if IE 9 ]>
+<html lang="en" class="ie9">
+
+<![endif]--><!--[if !IE]>
+<!-->
+<html lang="en">
+
+<!--<![endif]-->
+
+<head>
+
+<link type="text/css" rel="stylesheet"  href="css/book2.css" />
+<!--<script type="text/javascript" src="js/bookfunction2.js"></script> -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="js/hash.js"></script>
+<script type="text/javascript" src="js/turn.js"></script>
+<script type="text/javascript" src="js/turn.html4.min.js"></script>
+<script type="text/javascript" src="js/zoom.min.js"></script>
+<script type="text/javascript" src="js/magazine.js"></script>
+<script type="text/javascript" src="js/bookfunction1.js"></script>
+<script type="text/javascript" src="js/bookfunction2.js"></script>
+<script type="text/javascript" src="js/bookfunction3.js"></script>
+
+
+<script type="text/javascript">
+window.onload=function(){
+	a();b();
+	}
+function a()
+{
+
+var oDrag=document.getElementById('book2');
+
+var aDiv=oDrag.getElementsByTagName('div');
+
+var aLink=oDrag.getElementsByTagName('a');
+
+var i=0;
+
+for(i=0;i<aDiv.length;i++)
+
+{
+
+aDiv[i].style.zIndex=(i+1);
+
+aDiv[i].innerHTML+='<p>第 '+(i+1)+'/'+aDiv.length+' 页 提示：左右拖拽翻页</p>';
+
+aDiv[i].onmousedown=drag;
+
+}
+
+for(i=0;i<aLink.length;i++)
+
+{
+
+aLink[i].onmousedown=function(ev)
+
+{
+
+var oEvent=ev||event;
+
+oEvent.stopPropagation?oEvent.stopPropagation():oEvent.cancelBubble=true;
+
+};
+
+}
+
+}
+
+function b()
+{
+
+var oDrag=document.getElementById('book3');
+
+var aDiv=oDrag.getElementsByTagName('div');
+
+var aLink=oDrag.getElementsByTagName('a');
+
+var i=0;
+
+for(i=0;i<aDiv.length;i++)
+
+{
+
+aDiv[i].style.zIndex=(i+1);
+
+aDiv[i].innerHTML+='<p>第 '+(i+1)+'/'+aDiv.length+' 页 提示：左右拖拽翻页</p>';
+
+aDiv[i].onmousedown=drag;
+
+}
+
+for(i=0;i<aLink.length;i++)
+
+{
+
+aLink[i].onmousedown=function(ev)
+
+{
+
+var oEvent=ev||event;
+
+oEvent.stopPropagation?oEvent.stopPropagation():oEvent.cancelBubble=true;
+
+};
+
+}
+}
+</script>
+
+
+<script type="text/javascript">
+
+
+
+</script>
+
+
+<title>潮乡謿韵</title>
+
+<!--<meta name="viewport" content="width = 1050, user-scalable = no" />-->
+
+
+<!--网页自适应-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--设置了浏览器宽度不小于796px 电脑--> 
+<link id="sc" type="text/css" rel="stylesheet" href="css/book1.css" media="only screen and (min-width:796px) and (min-height:559px)" />
+<link id="sc" type="text/css" rel="stylesheet" href="css/leftmenu.css" media="only screen and (min-width:796px) and (min-height:559px)" />
+<link id="sc" type="text/css" rel="stylesheet" href="css/footer.css" media="only screen and (min-width:796px) and (min-height:559px)" />
+<link id="sc" type="text/css" rel="stylesheet" href="css/global.css" media="only screen and (min-width:796px) and (min-height:559px)" />
+
+
+
+<!--设置了浏览器宽度小于796px 宽度小于559-->
+<link type="text/css" rel="stylesheet" href="css/book1.css" media="only screen and (min-width:796px) and (max-height:558px)" />
+<link id="sc" type="text/css" rel="stylesheet" href="css/leftmenu.css" media="only screen and (min-width:796px) and (max-height:558px)" />
+<link id="sc" type="text/css" rel="stylesheet" href="css/footer.css" media="only screen and (min-width:796px) and (max-height:558px)" />
+<link id="sc" type="text/css" rel="stylesheet" href="css/global.css" media="only screen and (min-width:796px) and (max-height:558px)" />
+<!--
+<style>
+	@media screen and (min-width:796px) and (max-height:558px){
+		.magazine{
+		display:none;}
+		#footer{
+		display:none;}
+		#canvas{
+		display:none;}
+		#book2{
+		display:none;}
+		#book3{
+		display:block;}
+		#book2clickarea{
+	    display:none;}
+		#book2function{
+		display:none;}
+		#book3clickarea{
+		display:block}
+		}
+</style>--> 
+<!--设置了浏览器宽度小于796px 宽度小于559--> 
+<link type="text/css" rel="stylesheet" href="css/book3.css" media="only screen and (max-width:795px) and (max-height:558px)" />
+<style>
+	@media screen and (max-width:795px) and (max-height:558px){
+		.magazine{
+		display:none;}
+		#footer{
+		display:none;}
+		#canvas{
+		display:none;}
+		#book2{
+		display:none;}
+		#book3{
+		display:block;}
+		#book2clickarea{
+	    display:none;}
+		#book2function{
+		display:none;}
+		#book3clickarea{
+		display:block}
+		#book3function{
+		display:block}
+		}
+</style>
+<!--设置了浏览器宽度小于796px 宽度小于559--??????????????????????????????????????????--> 
+<link type="text/css" rel="stylesheet" href="css/book2.css" media="only screen and (max-width:558px) and (max-height:558px)" />
+<style>
+	@media screen and (max-width:558px) and (max-height:558px){
+		.magazine{
+		display:none;}
+		#footer{
+		display:none;}
+		#canvas{
+		display:none;}
+		#book2{
+		display:block}
+		#book3{
+		display:none;}
+		#book2clickarea{
+	    display:block;}
+		#book2function{
+		display:block;}
+		#book3clickarea{
+		display:none}
+		#book3function{
+		display:none}
+		}
+</style>
+<!--设置了浏览器宽度小于796px 宽度小于559--?????????????????????????????????????????????????????????????????????--> 
+<link type="text/css" rel="stylesheet" href="css/book1.css" media="only screen and (max-width:795px) and (min-height:559px)" />
+<link id="sc" type="text/css" rel="stylesheet" href="css/leftmenu.css" media="only screen and (max-width:795px) and (min-height:559px)" />
+<link id="sc" type="text/css" rel="stylesheet" href="css/footer.css" media="only screen and (max-width:795px) and (min-height:559px)" />
+<link id="sc" type="text/css" rel="stylesheet" href="css/global.css" media="only screen and (max-width:795px) and (min-height:559px)" />
+<!--
+<style>
+	@media screen and (max-width:795px) and (min-height:559px){
+		.magazine{
+		display:none;}
+		#footer{
+		display:none;}
+		#canvas{
+		display:none;}
+		#book2{
+		display:block}
+		#book3{
+			display:none;}
+		#book2clickarea{
+	    display:block;}
+		#book3clickarea{
+		display:none;}
+		}
+</style>-->
+<!--设置了浏览器宽度小于796px 宽度小于559--> 
+<link type="text/css" rel="stylesheet" href="css/book1.css" media="only screen and (max-width:558px) and (min-height:559px)" />
+<link id="sc" type="text/css" rel="stylesheet" href="css/leftmenu.css" media="only screen and (max-width:558px) and (min-height:559px)" />
+<link id="sc" type="text/css" rel="stylesheet" href="css/footer.css" media="only screen and (max-width:558px) and (min-height:559px)" />
+<link id="sc" type="text/css" rel="stylesheet" href="css/global.css" media="only screen and (max-width:558px) and (min-height:559px)" />
+
+
+<!--
+<style>
+	@media screen and (max-width:558px) and (min-height:559px){
+		.magazine{
+		display:none;}
+		#footer{
+		display:none;}
+		#canvas{
+		display:none;}
+		#book2{
+		display:block;}
+		#book3{
+			display:none;}
+		#book2clickarea{
+	    display:block;}
+		#book3clickarea{
+		display:none;}
+		}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+body,td,th {
+	font-family: "仿宋_GB2312";
+	font-size: 16px;
+}
+</style> -->
+
+
+
+
+
+
+
+<script>
+$(function(){
+var next_button = $(".next-button");              //初始化左右箭头
+var previous_button = $(".previous-button");
+setArrows();
+});
+</script>
+
+
+<script src="js/slides.min.jquery.js"></script>
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log(current);
+					};
+				}
+			});
+		});
+</script>
+
+
+
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<!--<embed style="position:absolute; top:20xp; right:20px;"  src="sounds/MusicPlayer.wf" height="80" width="80"></embed>
+
+
+<div ignore="1" id="video1" style=" z-index:96; position:absolute; height:5%; width:3%; right:10%; bottom:10%;" >
+</div>
+-->
+
+
+
+<div id="nightstyle" style="z-index:101;"></div>
+
+<div id="nightstyle2" style="z-index:95;"></div>
+
+<div id="timelimit" style="position:absolute; z-index:100; width:20%; height:30%; top:30%; left:40%; background:#575050; border:#F9F9F9 solid 2px; display:none;">
+
+<div style="position:relative; top:30%; left:20%; height:15%; width:80%;">
+ 	<h5 id="timesize" style="color:#F9F9F9; width:80%; height:100%;">请输入定时翻页的时间(/分钟)</h5>
+	<input id="inputtime" type="text" style="margin-top:5%; color:#726B6C; width:80%; height:100%; border-radius: 5px;">
+    <button id="maketimesure" style="width:25%; height:100%; margin-top:5%; margin-left:10%; float:left;" onClick="settime()">开启</button>
+    <button id="maketimesure" style="width:25%; height:100%; margin-top:5%; margin-left:10%;" onClick="nosettime()"> 关闭</button>
+</div>
+</div>
+
+
+<div id="allpic" style="z-index:100; width:30.5%; height:30%; position:absolute; bottom:40%; left:36%; border:#F9F9F9 solid 8px; display:none;">
+	<div id="example" style="width:100%; height:100%;">
+			<div id="slides" style="width:100%; height:100%;">
+				<div class="slides_container" style="width:100%; height:100%; ">
+					<div style=" position:absolute; left:0; top:0;width:100%; height:100%;"> 
+						<a target="_blank" style="width:100%; height:100%;"><img  width="570" height="270" class="imgshow" src="pages/chunjie.jpg" alt="Slide 1"></a>
+						<div class="caption" style="bottom:15px;">
+							<p>潮剧之《桃花过渡》</p>
+						</div>
+					</div>
+					<div style="width:100%; height:100%;">
+						<a  target="_blank" style="width:100%; height:100%;"><img class="imgshow" src="pages/gongfucha.jpg"  alt="Slide 2"></a>
+						<div class="caption">
+							<p>潮汕人最爱喝烫茶</p>
+						</div>
+					</div>
+					<div style="width:100%; height:100%;">
+						<a target="_blank" style="width:100%; height:100%;"> <img class="imgshow" src="pages/gongfucha2.jpg"  alt="Slide 3"></a>
+						<div class="caption">
+							<p>功夫茶的泡法也很有讲究</p>
+						</div>
+					</div>
+					<div style="width:100%; height:100%;">
+						<a  target="_blank" style="width:100%; height:100%;"><img class="imgshow" src="pages/tangyuan.jpg" alt="Slide 4"></a>
+						<div class="caption">
+							<p>冬至吃自家做的汤圆，没有馅，有粉白两种颜色</p>
+						</div>
+					</div>
+                    <div style="width:100%; height:100%;">
+						<a  target="_blank" style="width:100%; height:100%;"><img class="imgshow" src="pages/chuhuayuan3 .jpg"  alt="Slide 5"></a>
+						<div class="caption">
+							<p>出花园，换新装，也寄予着长大了，得脱离稚嫩</p>
+						</div>
+					</div>
+                    <div style="width:100%; height:100%;">
+						<a  target="_blank" style="width:100%; height:100%;"><img class="imgshow" src="pages/cuotou1 .jpg" alt="Slide 6"></a>
+						<div class="caption">
+							<p>厝角头（潮音）</p>
+						</div>
+					</div>
+                    <div style="width:100%; height:100%;">
+						<a  target="_blank" style="width:100%; height:100%;"><img class="imgshow" src="pages/cuotou2.jpg"  alt="Slide 7"></a>
+						<div class="caption">
+							<p>厝角头的豪华与否与主人的地位有很大关系</p>
+						</div>
+					</div>
+                   
+					
+					
+					
+				</div>
+				<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>
+			
+		</div>
+	</div>
+
+<div id="allvideo" style="z-index:100; width:50%; height:50%; position:absolute; bottom:30%; left:25%; display:none;">
+	<!--<embed id="videoem" style="width:100%; height:100%;" autostart=false src="video/1.mp4"></embed>-->
+</div>
+
+<div id="mulu" style="position:absolute; left:0; bottom:6%; width:15%; top:0; background:#222; z-index:90; display:none;">
+<h1 style="color:#F9F9F9;">目录<button onClick="openleftmenu()">×</button></h1>
+<ul>
+	<li style="border-bottom:none;" value="4">潮汕春节礼俗<span class="spannum">3</span></li>
+    <li style="border-bottom:none;" value="6">清明时节<span class="spannum">5</span></li>
+    <li style="border-bottom:none;" value="6">冬节小过年<span class="spannum">6</span></li>
+    <li style="border-bottom:none;" value="8">营大老爷<span class="spannum">7</span></li>
+    <li value="10">七月初七出花园<span class="spannum">9</span></li>
+</ul>
+
+</div>
+
+<!--遮罩书籍的某部分不可以点击
+<div class="magazine2" style="position:absolute; border:solid #428EE9 1px; left:20%; top:15%; width:12%; height:50%; z-index:50;">-->
+	<!--<div id="video1" style="position:absolute; cursor:pointer; left:14%; top:1.5%; width:4%; height:8%; background:url(pics/video1.png); background-size:contain; background-repeat:no-repeat;"></div>-->
+</div>
+
+<div id="canvas" >	
+<div class="magazine-viewport">
+<embed src="sounds/bgmusic.swf" style="position:absolute; top:2%; right:2%; width:10%; height:10%;"></embed>
+		<div class="container">
+			<div class="magazine">
+            	
+				<!-- Next button -->
+                <div><img style="width:100%; height:100%;" src="pages/1.png"></div>
+                
+                
+                <div style="background-image:url(pagebg/1.png)">
+                	
+                 <!-- <div style="position:absolute; top:2%;  left:4%; bottom:2%; width:96%; height:96%; background:url(pages/left.jpg);"></div> -->
+                	<!--<h1>序言</h1>
+                    <h3>&nbsp;&nbsp;&nbsp; 在中国，节日往往是岁时节气和原始崇<br>
+                                    拜的结合，或纪念，或寓意，或祈福，富有<br>
+                                    民俗蕴义。“过日子，勿忘时年八节。”这<br>
+                                    是潮汕人经常念叨的一句话。因为在潮汕地<br>
+                                    区，“岁时节日”的各种活动，世代沿袭相<br>
+                                    传，蔚然为俗。本书收录了其中几个具有代<br>
+                                    表性且寓意深刻的潮汕传统节日。<br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——编著者</h3>
+                   <h6></h6><h5>第1页</h5> -->
+    			</div>
+                
+                
+                <div style="background-image:url(pagebg/2.png)">
+                	
+                    <!--<div style="  position:absolute; top:2%;  right:4%; bottom:2%; width:96%; height:96%; background:url(pages/right.jpg);"></div>-->
+                	<!--<h1>目录</h1>
+                    
+                        <h2>第一节&nbsp;祭拜祖先的重要节日</h2>
+                        <h3>&nbsp;&nbsp;潮汕春节礼俗...............3</h3>
+                        <h3>&nbsp;&nbsp;清明时节...................5</h3>
+                         <h3>&nbsp;&nbsp;冬节小过年.................7</h3>
+                            
+                        <h2>第二节&nbsp;土神之祭</h2>
+                        <h3>&nbsp;&nbsp;营大老爷...................9<br></h3>
+                        
+                        <h2>第三节&nbsp;与小孩成长有关的节日</h2>
+                        <h3>&nbsp;&nbsp;七月初七出花园.............11<br></h3>
+                     <h6></h6>
+                     <h5>第2页</h5>-->
+                </div>
+                
+                
+                   <div style="background-image:url(pagebg/3.png)">
+                    <!--<div id="chunjievideo" style="position:absolute;right:20%; top:10%;height:10%; width:30%; height:30; border:#E5A03B solid 2px; z-index:200;cursor:pointer;"onClick="playchunjie();event.cancelBubble=true"><img id="articlepic1" class="articlevideopic" style="width:100%; height:100%; cursor:pointer;" src="pics/video1.png"; ></div> -->
+                    <div style="position:absolute;right:51%; top:8.5%; height:5%; width:7%; z-index:50; cursor:pointer;"><img id="articlepic2" class="articlevideopic" style="width:100%; height:100%; " src="pics/video1.png"; onClick="playchunjie();event.cancelBubble=true"></div> 
+                	<!--<img style="position:relative; top:10%; left:52%; width:40%; height:60%;" src="pages/春左.png">
+                    <h1 style="position:absolute; top:8%; top:9%; left:18%;">❶ 春节</h1>
+                   
+                    <h4 style="position:absolute;left:7%;top:17%;">&nbsp;&nbsp;&nbsp;腊穷春自至，四序<br>
+                        递相延。年夜也称除夕，<br>
+                        男人男人把家里旧对联<br>
+                        撕下，再贴上新联；同<br>
+                        时，女人在香气缭绕的<br>
+                        厨房里噼里啪啦地准备<br>
+                        好鱼肉菜肴，全家老小<br>
+                        沐浴换新衣，随后便开<br>
+                        始祭祖。祭过祖先，全<br>
+                        家人兴致盎然，围炉品<br>
+                        尝丰盛的年夜饭，猪血<br>
+                        猪肠炒大蒜和海<span onMouseMove="message1()" onMouseOut="message2()" style="color:#EB1E21; cursor:pointer;">蚶</span>，是<br>
+                        寓意“长久”、“发财”<br>
+                        的两道菜。水缸水桶打<br>
+                        满水之后，要将井口盖<br>
+                        住再供上祭品拜井公井<br>
+                        妈。燃烛焚香，具茶果酒品，小孩收压岁钱，成<br>
+                        家子弟自然也给长者压岁钱，一家人欢欢喜喜守<br>
+                        岁，等待元日的到来。<br>
+                        &nbsp;&nbsp;12点钟声敲响，欣喜的炮竹声延绵不绝，拜<br>
+                        祖先所用的全是斋品，如柿饼，冬瓜糖，小油条，<br>
+                        红枣茶，有趣的是奶奶常道：“一定要给祖先备
+                        </h4>
+                       <h6></h6> 
+                     <h5>第3页</h5>-->
+                     <div onMouseMove="message1()" onMouseOut="message2()" style="position:absolute; left:30%; width:15%; height:8%;bottom:40%;
+                     color:#EB1E21; cursor:pointer;"></div>
+                     <div onMouseMove="message1()" onMouseOut="message2()" id="message1" style="position:absolute; top:21%; left:22%; width:60%; height:35%; display:none; z-index:50;">
+                     	<img class="explainvideo" style="width:10%; z-index:50; height:10%; position:absolute; right:20%; bottom:18%; cursor:pointer;" src="pics/video1.png" onClick="playvideo();event.cancelBubble=true">
+                     	<img style="width:100%; z-index:48; height:100%;" src="pages/message1.png">
+                     </div>
+                     
+                     <div onMouseMove="message3()" onMouseOut="message4()" id="message2" style="position:absolute; bottom:51%; left:22%; width:50%; height:35%; display:none;z-index:50;">
+                     	<img class="explainvideo" style="width:10%; z-index:50; height:10%; position:absolute; right:20%; bottom:18%; cursor:pointer;" src="pics/video1.png" onClick="playvideo();event.cancelBubble=true">
+                     	<img style="width:100%; z-index:48; height:100%;" src="pages/message2.png">
+                     </div>
+                     
+                     
+                </div>
+                
+                   <div style="background-image:url(pagebg/4.png)">
+                	<!--<img style="position:relative; top:10%; left:8%; width:40%; height:60%;" src="pages/春右.png">
+                    
+                    <h4 style=" position:absolute; top:10%; left:54%; right:5%;">
+                    好甘蔗，好让祖先挑走我们给他们准备好的祭品。 ”
+                    拜年大概分为三种，一种行于家人之间；一种行于亲朋之间<br>，带上礼品并说些“新年快乐，万事顺利”等祝福语，主人家会自备橄榄。拜过年，宾客和主人互换柑，俗谓“换桔”，寄予“共
+                    同吉祥”；还有一种拜年行于同僚同行之间，用“<br>升官发财”等吉祥语。年初二，女婿和妻子回娘家。初三开井，用红糖，银锭，清茶，香烛<br>
+                    拜井之后，老妇揭开井
+                    </h4>
+                    <h4 style="position:absolute; top:72%; left:8%; right:5%;">
+                    盖往里面倒入红糖和三杯清茶，再打上12桶水往地上倒。舞狮和锣鼓也是春节重要的活动，商行店铺会放鞭炮迎接。到初四，神庙开门迎神，家家户户准备祭品迎诸神。到此，春节就告一段落啦。</h4>
+                  <h6></h6> <h5>第4页</h5>-->
+                </div>
+                
+                   <div style="background-image:url(pagebg/5.png)">
+                	<!--<img style="width:75%; height:30%; position:relative; left:13%; top:10%;" src="pages/qingming.png">
+                    <h1 style="position:absolute; top:43%; left:35%;">❷ 清明时节</h1> -->
+                    <div style="position:absolute;left:70%; top:43%; height:5%; width:7%; z-index:50; cursor:pointer;"><img id="articlepic2" class="articlevideopic" style="width:100%; height:100%; " src="pics/video1.png"; onClick="playqingming();event.cancelBubble=true"></div> 
+                    <!--<h4 style="position:absolute;left:5%;top:49%; margin-top:2%; right:5%;">
+                    	&nbsp; &nbsp; 清明是二十四节气之一 ，也是汉民族祭祀祖<br>
+                        先，谒坟扫墓的重要节日。扫墓，潮汕人又称“挂<br>
+                        纸”或“上坟”。谓之“挂纸”，是因为清明扫墓<br>
+                        时，山岭丘陇间到处都悬挂着纸钱。不仅如此，在<br>
+						潮汕，清明扫墓时，亲朋好友会经常在野外聚餐畅<br>
+                        饮，有的地方，甚至“俗尚鼓吹，多放铳炮”（引<br>
+                        自《普宁县志》），山林间，充满喧闹欢乐。<br>
+                    </h4>
+                   <h6></h6> <h5>第5页</h5> -->
+                </div>
+                
+                
+                <!--
+                <div style="background-image:url(pages/right.jpg)">
+                    <img style="position:absolute; right:5.5%; bottom:11%; width:54%; height:40%;" src="pages/saomu.png">
+                	<h4 style="position:absolute;left:5%;top:10%; right:5%;">
+                    	&nbsp;&nbsp;在潮汕农村，冬节丸除了食用外，还有个特别的用途，即是在门框、碓臼、炉灶、米缸、犁耙、水车以及猪、鸡、鹅、牛等牲畜身上粘贴二粒糯米丸，祈神保护，祷祝牲畜平安过冬，新年健旺。有些地方还要在水果树上贴上冬节丸，在树干上遍处划破一点点树皮，把丸汤淋在上面，祈望来年果树能贴枝，结的果实象汤圆一样流流滴滴。所有这些，都是昔时小农经济生产者对自然神的崇敬与依赖。<br>
+						&nbsp;&nbsp;此外，冬节<br>
+                        潮属还有上坟扫<br>
+                        墓的习俗，也称<br>
+                        “挂冬纸”。
+                    </h4>
+                   <h6></h6> <h5>第6页</h5>
+                </div>  -->
+                
+                <div style="background-image:url(pagebg/6.png)">
+                   
+                    
+                    <!--<img style="width:75%; height:30%; position:relative; left:13%; top:10%;" src="pages/maketangyuan.png">
+                    <h1 style="position:absolute; top:43%; left:35%;">❸ 冬节</h1>-->
+                     <div style="position:absolute;left:58%; top:43.5%; height:5%; width:7%; z-index:50;"><img id="dongjievideo" style="width:100%; height:100%; cursor:pointer;" src="pics/video1.png"; onClick="playarticlevideo2();event.cancelBubble=true"></div> 
+                    <!-- <h4 style="position:absolute;left:5%;top:49%; margin-top:2%; right:5%;">
+                    	&nbsp; &nbsp;潮汕人把冬节当成祈求全家人团聚的日子。在<br>
+                        冬节前两天，就将糯米泡软，舂成米粉，主妇用热<br>
+                        开水将糯米粉揉成粉团，全家老小都围在一起搓丸<br>
+                        并晾干。待到冬节一大早先熬好红糖水，将丸子下<br>
+                        锅煮成糖丸。若是家里有人要出远门，就要为他留<br>
+                        下一包糯米粉，等他一回家就搓丸吃。在农村，农<br>
+                        夫会在牛的两角各黏上一粒丸子，体现了<span onMouseMove="message5()" onMouseOut="message6()" style="cursor:pointer;">民胞物与</span><br>
+                        的胸怀。
+                    </h4>
+                   <h6></h6> <h5>第6页</h5> -->
+                   <div id="message3" style="position:absolute; left:40%; bottom:1%; width:40%; height:25%; display:none;">
+                   		<img style="width:100%; z-index:48; height:100%;" src="pages/message3.png">
+                        <img class="explainvideo" style="width:10%; z-index:50; height:10%; position:absolute; right:24%; top:18%; cursor:pointer;" src="pics/video1.png" onClick="playvideo();event.cancelBubble=true">
+                   </div>
+                </div>
+                
+                
+                <!--
+                <div style="background-image:url(pages/right.jpg)">
+                    <img style="position:absolute; right:5.5%; bottom:11%; width:54%; height:40%;" src="pages/saomu.png">
+                	<h4 style="position:absolute;left:5%;top:10%; right:5%;"><br>
+						&nbsp;&nbsp;此外，冬节
+                        潮属还有上坟扫
+                        墓的习俗，也称<br>
+                        “挂冬纸”。
+                    </h4>
+                   <h6></h6> <h5>第8页</h5>
+                </div> -->
+                
+                
+                <div style="background-image:url(pagebg/7.png)">
+                	<!--<h1 style="position:relative; top:8%; left:38%;">❹ 营大老爷</h1>-->
+                    <<div style="position:absolute;left:73%; top:7.8%; height:5%; width:7%; z-index:50; cursor:pointer;"><img id="articlepic3" class="articlevideopic" style="width:100%; height:100%;" src="pics/video1.png"; onClick="playlaoye();event.cancelBubble=true"></div> 
+                    <!--<h4 style="position:absolute;left:7%;top:17%; right:5%;">
+                    	&nbsp; &nbsp; 对土神的祭祀，<br>
+                        潮汕人称之为“营大<br>
+                        老爷”。一种出于对<br>
+                        耕地的崇拜，对土地<br>
+                        上生长出五谷表示感<br>
+                        恩；另一种是对所定<br>
+                        居土地的崇拜，对保<br>
+                        护人们安居的报德。<br>
+                        村民们会杀鸡准备好<br>
+                        果品，集中在广场上焚香，点蜡烛，拜祭土神；当<br>
+                        晚的节日活动以赛花灯为中心，同时，还会燃放烟<br>
+                        花，也要演戏酬神。祭祀过程中，必有土神巡土安<br>
+                        境的仪式，分为文营和武营两种。在农村，会采用
+                    </h4>
+                    <h4 style="position:absolute;left:54%; top:62%; right:5%;">
+                    武营，祭祀完成后，先<br>
+                    用红绳将神像捆紧在神<br>
+                    轿上 ，做好疾走的准<br>
+                    备。每家每户都会在家<br>
+                    门口点燃篝火，丁壮们<br>
+                    会抬起神像跳过篝火，<br>
+                    跑过小巷。而在城镇，<br>
+                    采用文营，祭祀仪式<br>
+                    后，壮丁抬起神像，仪</h4>
+                    <img style="position:absolute; right:5%; top:15%; width:50%; height:30%;" src="pages/laoye1.png">
+                    <img style="position:absolute; left:3%; bottom:6%; width:48%; height:30%;" src="pages/laoye2.png">
+                   <h6></h6> <h5>第7页</h5>-->
+                </div>
+                
+                
+                
+                <div style="background-image:url(pagebg/8.png)">
+                	 <!--<h4 style="position:absolute;left:5%;top:10%; margin-top:2%; right:5%;">
+                    	仗鼓乐前导，巡完社区的每一条巷子后再绕社区的<br>
+                        边界游行一圈。一般，老爷出巡的仪仗队伍，由标<br>
+                        旗，大锣鼓和醒狮组成。到现代，营大老爷的活动<br>
+                        基本上演化成娱乐性的竞赛，除此之外也有增进邻<br>
+                        里团结，加强乡村治理的作用。<br>
+                        &nbsp;&nbsp;营大老爷还有一个很重要的工具就是 —— 灯<br>
+                        笼，这玩意几乎都是手工制作的。晚上的时候在里<br>
+                        面点上煤油灯，提着去“老爷宫”（潮汕人上香祭<br>
+                        拜的地方）。
+                    </h4>
+                    <img style="position:absolute; left:8%; bottom:20%; width:80%; height:30%;" src="pages/laoye3.png">
+                   <h6></h6> <h5>第8页</h5> -->
+                </div>
+                
+                
+                 <div style="background-image:url(pagebg/9.png)">
+                	<!--<img style="position:absolute; top:10%; left:9%; width:80%; height:50%;" src="pages/chuhuayuan1.png">
+                	<h1 style="position:absolute; left:30%; top:63%;">❺ 出花园成人礼</h1>-->
+                    <div style="position:absolute;left:78%; top:63%; height:5%; width:7%; z-index:50; cursor:pointer;"><img id="articlepic4" class="articlevideopic" style="width:100%; height:100%;" src="pics/video1.png"; onClick="playhuayuan();event.cancelBubble=true"></div>  
+                   <!-- <h4 style="position:absolute;left:5%;top:72%; right:5%;">
+                        &nbsp; &nbsp;“出花园”是潮汕特有的成年礼，15周岁的孩<br>
+                        子会在七月七就是七夕，或者是七月十五中元节那<br>
+                        天，家长备<span onMouseMove="message7()" onMouseOut="message8()" style=" cursor:pointer;">三牲</span>果，品让孩子跪拜<span onMouseMove="message9()" onMouseOut="message10()" style=" color:#EB1E21; cursor:pointer;">公婆神</span>。要用十<br>
+                        二样鲜花泡水沐浴，换上由舅舅送来的新衣和红皮<br>
+                        <span onMouseMove="message1()" onMouseOut="message2()" style=" cursor:pointer;">屐</span>，围新肚兜，头戴一朵石榴花。当天小孩要躲在<br>
+                        房间里，不可以打电话，不可以干活，全由家人宠</h4>
+                     <h6></h6>   <h5>第9页</h5>-->
+                     <div onMouseMove="message9()" onMouseOut="message10()" style=" position:absolute;left:65%; top:73%; height:10%; width:12%; z-index:50; cursor:pointer;"></div>
+                     <div id="message5" onMouseMove="message9()" onMouseOut="message10()" style=" display:none; position:absolute; right:8%; bottom:20%; width:40%; height:25%; z-index:60;">
+                     		<img id="explainvideo5" style="width:15%; z-index:50; height:15%; position:absolute; right:23%; bottom:20%; cursor:pointer;" src="pics/video1.png" onClick="playvideo5();event.cancelBubble=true">
+                     		<img style="width:100%; z-index:48; height:100%;" src="pages/message5.png">
+                     </div>
+                </div>
+                
+                
+                <div style="background-image:url(pagebg/10.png)">
+                	<!-- <h4 style="position:absolute;left:5%;top:9%; margin-top:2%; right:5%;">
+                   着。中午请来亲戚来吃酒菜，此时桌上的大公鸡会朝着“出花园者”，其他人不能先动菜，由小孩先吃公鸡头，寓意小孩长大了要出人头地。并且在宴席前，小孩要吃猪大肠炒蒜，韭菜炒蒜，猪肝炒蒜，猪心炒蒜，猪肺炒蒜,寓意是15岁了，必须更新内脏。出花园是一个结束仪式，更加是一个开始仪式，从那天开始，小孩就真正踏上人生之路了。</h4>
+                    <img style="position:absolute; left:6%; bottom:25%; width:40%; height:30%;" src="pages/chuhuayuan2.png">
+                    <img style="position:absolute; right:6%; bottom:25%; width:40%; height:30%;" src="pages/chuhuayuan3.png">
+                    <h6></h6><h5>第10页</h5> -->
+                </div>
+               
+               
+                <div><img style="width:100%; height:100%;" src="pages/12.png"></div>
+                </div>
+		</div>
+		<div ignore="1" style=" z-index:96; height:5.5%; width:3%;" class="next-button" onClick="playSound()">
+		</div>
+		<!-- Previous button -->
+		<div ignore="1" style=" z-index:96; height:5.5%; width:3%;" class="previous-button" onClick="playSound()">
+		</div>
+      <!--
+        <div style="position:absolute; height:5%; width:2.5%;right:10%; bottom:10%; z-index:95; cursor:pointer;" onClick="changereadpic()">
+			<img id="peopleread" style="width:100%; height:100%; position:absolute; top:0; left:0;" src="pics/video1.png">
+		</div> -->
+    </div>  
+            
+<footer id="footer"style="position:absolute; z-index:98; width:100%; height:6%; background-color:#000000; bottom:0;">
+			<div class="choice">
+            	<select id="choiceselect">
+                	<option value="close">合上</option>
+                    <option value="open">打开</option>
+                </select>
+            </div>
+            
+            <div class="inputnum">
+            	<input id="input_a_num" type="text" style=" color:#726B6C;" value="请输入页数" onfocus="changetextcolor1()">
+                <button id="makesure" onClick="change()">确定</button>
+             <!--   <button id="day" style="width:100px;" onClick="zhezhao()">dayornight</button> 
+                <button id="peopleread">阅读古诗</button> -->
+            </div>
+            
+            <div class="footer-center">
+            	<div class="fcenter" ><img id="fcenter1" src="pics/leftmenu.png" onMouseOver="changebackgroud1()" onMouseOut="changebackgroud2()" onClick="openleftmenu()"></div>
+                <!--<div class="fcenter" ><img id="fcenter2" src="pics/turnvideo.png" onMouseOver="changebackgroud3()" onMouseOut="changebackgroud4()" onClick="turnvideo()"></div>-->
+            </div>
+            
+            <div class="footer-right">
+              <div class="menu"><img id="fcenter3" class="icon_menu" src="img/menu.png" onMouseOver="changebackgroud5()" onMouseOut="changebackgroud6()" /><span></span></div>
+                <div class="btn btn1" data-num="1"><img id="dayornight" onClick="zhezhao()" src="img/day.png"></div>
+                <div class="btn btn2" data-num="2"><img onClick="showphoto()" src="img/photo.png"></div>
+                <div class="btn btn3" data-num="3"><img onClick="showvideo()" src="img/video.png"></div>
+                <div class="btn btn4" data-num="4"><img onClick="showtimedialog()" src="img/time.png"></div>
+            </div>
+</footer>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".menu").click(function(){
+		var span = $(this).find("span");
+		if(span.hasClass("open")){
+			span.removeClass("open").addClass("close");
+			$(".btn").removeClass("open").addClass("close");
+		}else{
+			span.removeClass("close").addClass("open");
+			$(".btn").removeClass("close").addClass("open");
+		}
+	});
+});
+</script>    
+	</div>
+  
+
+<div id="book2">
+       
+		<div>
+        
+        	<img id="book2_img1" src="pages/12.png"/> 
+        
+        </div> 
+        
+        <div>
+        
+        	<img id="book2_img2" src="book2/竖1/10.png"/> 
+        
+        </div> 
+               
+		<div>
+        
+        	<img id="book2_img3" src="book2/竖1/9.png"/> 
+        
+        </div>       
+<div>
+        
+        	<img id="book2_img4" src="book2/竖1/8.png"/> 
+        
+        </div>        
+<div>
+        
+        	<img id="book2_img5" src="book2/竖1/7.png"/> 
+        
+        </div>
+<div>
+        
+        	<img id="book2_img6" src="book2/竖1/6.png"/> 
+        
+        </div>
+<div>
+        
+        	<img id="book2_img7" src="book2/竖1/5.png"/> 
+        
+        </div>
+<div>
+        
+        	<img id="book2_img8" src="book2/竖1/4.png"/> 
+        
+        </div>
+<div>
+        
+        	<img id="book2_img9" src="book2/竖1/3.png"/> 
+        
+        </div>        
+<div>
+        
+        	<img id="book2_img10" src="book2/竖1/2.png"/>  
+        
+        </div>       
+<div>
+        
+        	<img id="book2_img11" src="book2/竖1/1.png"/> 
+        
+        </div>       
+<div>
+        
+           <img id="book2_img12" src="pages/1.png"/> 
+        
+        </div>
+        
+</div>
+
+<div id="book3" style="z-index:80;">
+       
+		<div>
+        
+        	<img id="book3_img1" src="pages/13.png"/> 
+        
+        </div> 
+        
+             
+<div>
+        
+        	<img id="book3_img2" src="book3/横1/8.png"/> 
+        
+        </div>        
+<div>
+        
+        	<img id="book3_img3" src="book3/横1/7.png"/> 
+        
+        </div>
+<div>
+        
+        	<img id="book3_img4" src="book3/横1/6.png"/> 
+        
+        </div>
+<div>
+        
+        	<img id="book3_img5" src="book3/横1/5.png"/> 
+        
+        </div>
+<div>
+        
+        	<img id="book3_img6" src="book3/横1/4.png"/> 
+        
+        </div>
+<div>
+        
+        	<img id="book3_img7" src="book3/横1/3.png"/> 
+        
+        </div>        
+<div>
+        
+        	<img id="book3_img8" src="book3/横1/2.png"/>  
+        
+        </div>       
+<div>
+        
+        	<img id="book3_img9" src="book3/横1/1.png"/> 
+        
+        </div>       
+<div>
+        
+           <img id="book3_img10" src="pages/14.png"/> 
+        
+        </div>
+        
+</div>
+
+<div id="nightstyle3" style="position:absolute; left:0%; top:0%; width:100%; height:100%; z-index:101;"></div>
+
+<div id="book2clickarea" style="position:absolute; left:10%; top:10%; right:10%; height:70%;z-index:100;"></div>
+
+<div id="book3clickarea" style="position:absolute; left:10%; top:10%; right:10%; height:70%;z-index:100;"></div>
+
+<div id="book2function" style=" display:none;position:absolute; bottom:0%; height:40%; width:100%; z-index:101; background-color:#000; 
+	 filter:alpha(opacity=50); 
+	 -moz-opacity:0.5; 
+	 opacity:0.8; ">
+				<div id="menu1" style=" position:absolute; top:3%; width:100%; height:12%;">
+                	<!--<h3 style="position:absolute; left:5%; top:3%; color:#F9F9F9; cursor:pointer;"> < 返回 </h3>-->
+                    <div style="height:99%; width:25%; cursor:pointer;" onClick="closefunction()">
+                    	<img style="width:100%; height:100%;" src="book2img/back.png">
+                    </div>
+                    <div style="position:absolute; width:100%; bottom:0; height:1px; color:#F9F9F9; border-bottom:#F9F9F9 1px solid;"></div>
+                </div>
+                <div id="menu2" style="position:absolute; width:100%; height:88%; top:20%;">
+     			<div class="book2btn1" style="left:14.4%; cursor:pointer;" data-num="1"><img id="dayornight3" onClick="zhezhao3()" src="book2img/day.png"></div>
+                <div class="book2btn2" style="left:35.8%; cursor:pointer" data-num="2"><img onClick="" src="book2img/photo.png"></div>
+                <div class="book2btn3" style="left:57.2%; cursor:pointer"data-num="3"><img onClick="showvideo()" src="book2img/video.png"></div>
+                <div class="book2btn4" style="left:78.6%; cursor:pointer"data-num="4"><img onClick="showtimedialog2()" src="book2img/time.png"></div> 
+                <div class="book2word1" style="left:13.6%;" data-num="1"><img id="dayornightword"  src="book2img/wordday.png"></div>
+                <div class="book2word2" style="left:35.2%;" data-num="2"><img  src="book2img/wordphoto.png"></div>
+                <div class="book2word3" style="left:56.8%;"data-num="3"><img  src="book2img/wordvideo.png"></div>
+                <div class="book2word4" style="left:76%;"data-num="4"><img style="float:left;"src="book2img/wordtime.png"></div>  
+                
+                <div class="book2btn5" style="left:14.4%; cursor:pointer" data-num="1"><img id="dayornight" onClick="changeword()" src="book2img/wordword.png"></div>
+                <div class="book2btn6" style="left:35.8%; cursor:pointer" data-num="2"><img onClick="showsousuo()" src="book2img/sousuo.png"></div>
+                <div class="book2btn7" style="left:57.2%; cursor:pointer" data-num="3"><img onClick="changewordbackground()" src="book2img/bgpic.png"></div>
+                <div class="book2btn8" style="left:78.6%; cursor:pointer" data-num="4"><img onClick="showjumpto()" src="book2img/tiaozhuan.png"></div> 
+                <div class="book2word5" style="left:13.6%;" data-num="1"><img id="dayornight" onClick="zhezhao()" src="book2img/ziti.png"></div>
+                <div class="book2word6" style="left:35.2%;" data-num="2"><img onClick="showphoto()" src="book2img/ss.png"></div>
+                <div class="book2word7" style="left:56.8%;"data-num="3"><img onClick="showvideo()" src="book2img/bg.png"></div>
+                <div class="book2word8" style="left:76%;"data-num="4"><img style="float:left;" onClick="showtimedialog()" src="book2img/wordtiaozhuan.png"></div>
+                </div>
+				</div>
+                
+<div id="book3function" style=" display:none; position:absolute; bottom:0%; height:25%; width:100%; z-index:101; background-color:#000; 
+	 filter:alpha(opacity=50); 
+	 -moz-opacity:0.5; 
+	 opacity:0.8; ">
+				<div id="menu11" style=" position:absolute; top:3%; width:100%; height:20%;" onClick="closefunction()">
+                	<div style="height:90%; width:20%; position:absolute; bottom: 10%; cursor:pointer; ">
+                    	<img style="width:100%; height:100%;" src="book2img/back.png">
+                    </div>
+                    <div style="position:absolute; width:100%; bottom:0; height:1px; color:#F9F9F9; border-bottom:#F9F9F9 1px solid;"></div>
+                </div>
+                <div id="menu22" style="position:absolute; width:100%; height:88%; top:20%;">
+     			<div class="book3btn1" style="left:4%; cursor:pointer;" data-num="1"><img id="dayornight3" onClick="zhezhao3()" src="book2img/day.png"></div>
+                <div class="book3btn2" style="left:16%; cursor:pointer" data-num="2"><img onClick="()" src="book2img/photo.png"></div>
+                <div class="book3btn3" style="left:28%; cursor:pointer"data-num="3"><img onClick="showvideo()" src="book2img/video.png"></div>
+                <div class="book3btn4" style="left:40%; cursor:pointer"data-num="4"><img onClick="showtimedialog3()" src="book2img/time.png"></div> 
+                <div class="book3btn4" style="left:40%; cursor:pointer"data-num="4"><img onClick="()" src="book2img/time.png"></div> 
+                <div class="book3word1" style="left:4%;" data-num="1"><img id="dayornightword2"  src="book2img/wordday.png"></div>
+                <div class="book3word2" style="left:16%;" data-num="2"><img  src="book2img/wordphoto.png"></div>
+                <div class="book3word3" style="left:28%;"data-num="3"><img  src="book2img/wordvideo.png"></div>
+                <div class="book3word4" style="left:39%;"data-num="4"><img style="float:left;"src="book2img/wordtime.png"></div>  
+                
+                <div class="book3btn5" style="left:52%; cursor:pointer" data-num="1"><img id="dayornight" onClick="changeword()" src="book2img/wordword.png"></div>
+                <div class="book3btn6" style="left:64%; cursor:pointer" data-num="2"><img onClick="()" src="book2img/sousuo.png"></div>
+                <div class="book3btn7" style="left:76%; cursor:pointer" data-num="3"><img onClick="()" src="book2img/bgpic.png"></div>
+                <div class="book3btn8" style="left:88%; cursor:pointer" data-num="4"><img onClick="()" src="book2img/tiaozhuan.png"></div> 
+                <div class="book3word5" style="left:52%;" data-num="1"><img id="dayornight" onClick="()" src="book2img/ziti.png"></div>
+                <div class="book3word6" style="left:64%;" data-num="2"><img onClick="showphoto()" src="book2img/ss.png"></div>
+                <div class="book3word7" style="left:76%;"data-num="3"><img onClick="showvideo()" src="book2img/bg.png"></div>
+                <div class="book3word8" style="left:88%;"data-num="4"><img style="float:left;" onClick="showtimedialog()" src="book2img/wordtiaozhuan.png"></div>
+                </div> 
+				</div>
+                
+<div id="limittime2" style=" display:none; background:#E5A03B;position:absolute; bottom:0%; height:30%; width:100%; z-index:50; background-color:#000; 
+	 filter:alpha(opacity=50); 
+	 -moz-opacity:0.5; 
+	 opacity:0.8;">                
+ 				<div id="menu3" style=" position:absolute; top:3%; width:100%; height:12%;">
+                	<div id="back2" style="height:99%; width:25%; cursor:pointer; ">
+                    	<img style="width:100%; height:100%;" src="book2img/back.png">
+                    </div>
+                    <div style="position:absolute; width:100%; bottom:0; height:1px; color:#F9F9F9; border-bottom:#F9F9F9 1px solid;"></div>
+                </div>   
+                <div id="menu4" style="position:absolute; width:100%; height:80%; top:20%;">
+     			<div  style=" position:absolute; left:20%; height:30%; width:60%; cursor:pointer;" data-num="1">
+                	<img style="width:100%; height:100%; background-size:contain; background-repeat:no-repeat;"  src="book2img/limittime.png"></div>
+                	<input style=" position:absolute; top:40%; left:24%; height:20%; width:48%;">
+                    <button id="book2start">开启</button>
+                    <button id="book2cancle">取消</button>
+                </div>          
+ </div>  
+ 
+<div id="changewordfont" style=" display:none; background:#E5A03B;position:absolute; bottom:0%; height:35%; width:100%; z-index:50; background-color:#000; 
+	 filter:alpha(opacity=50); 
+	 -moz-opacity:0.5; 
+	 opacity:0.8;">                
+ 				<div id="menu3" style=" position:absolute; top:3%; width:100%; height:12%;">
+                	<div id="back3" style="height:99%; width:25%; cursor:pointer; ">
+                    	<img style="width:100%; height:100%;" src="book2img/back.png">
+                    </div>
+                    <div style="position:absolute; width:100%; bottom:0; height:1px; color:#F9F9F9; border-bottom:#F9F9F9 1px solid;"></div>
+                </div>   
+                <div id="menu4" style="position:absolute; width:100%; height:80%; top:30%;">
+     			<div  style=" position:absolute; left:20%; height:30%; width:60%; cursor:pointer;" data-num="1">
+                	<img style="width:100%; height:100%; background-size:contain; background-repeat:no-repeat;"  src="book2img/choicefont.png"></div>
+                    <button id="book2font1" onClick="changetofont1()">正规</button>
+                    <button id="book2font2" onClick="changetofont2()">俏皮</button>
+                </div>          
+ </div>     
+ 
+<div id="changewordbg" style=" display:none; background:#E5A03B;position:absolute; bottom:0%; height:35%; width:100%; z-index:50; background-color:#000; 
+	 filter:alpha(opacity=50); 
+	 -moz-opacity:0.5; 
+	 opacity:0.8;">                
+ 				<div id="menu33" style=" position:absolute; top:3%; width:100%; height:12%;">
+                	<div id="back6" style="height:99%; width:25%; cursor:pointer; ">
+                    	<img style="width:100%; height:100%;" src="book2img/back.png">
+                    </div>
+                    <div style="position:absolute; width:100%; bottom:0; height:1px; color:#F9F9F9; border-bottom:#F9F9F9 1px solid;"></div>
+                </div>   
+                <div id="menu44" style="position:absolute; width:100%; height:80%; top:30%;">
+     			<div  style=" position:absolute; left:20%; height:30%; width:60%; cursor:pointer;" data-num="1">
+                	<img style="width:100%; height:100%; background-size:contain; background-repeat:no-repeat;"  src="book2img/choicebg.png"></div>
+                    <button id="book2bg1" onClick="changetofont3()">古色</button>
+                    <button id="book2bg2" onClick="changetofont4()">青春</button>
+                </div>          
+ </div> 
+
+<div id="sousuo" style=" display:none; background:#E5A03B;position:absolute; bottom:0%; height:60%; width:100%; z-index:50; background-color:#000; 
+	 filter:alpha(opacity=50); 
+	 -moz-opacity:0.5; 
+	 opacity:0.8;">                
+ 	<div id="menu5" style=" position:absolute; top:3%; width:100%; height:12%;">
+             <div id="back4" style="height:99%; width:25%; cursor:pointer; ">
+                    	<img style="width:100%; height:100%;" src="book2img/back.png">
+                    </div>
+             <div style="position:absolute; width:100%; bottom:0; height:1px; color:#F9F9F9; border-bottom:#F9F9F9 1px solid;"></div></div>
+             
+             	 <div id="menu6" style="position:absolute; width:100%; height:80%; top:25%; left:10%;">
+                    <img style=" height:15%;" src="book2img/chunjie.png"><br>
+                    <img style=" height:15%;" src="book2img/qingming.png"><br>
+                    <img style=" height:15%;" src="book2img/dongjie.png"><br>
+                    <img style=" height:15%;" src="book2img/laoye.png"><br>
+                    <img style=" height:15%;" src="book2img/chuhuayuan.png">
+                 </div>    
+    </div>   
+    
+<div id="changepage" style=" display:none; background:#E5A03B;position:absolute; bottom:0%; height:35%; width:100%; z-index:50; background-color:#000; 
+	 filter:alpha(opacity=50); 
+	 -moz-opacity:0.5; 
+	 opacity:0.8;">                
+ 				<div id="menu3" style=" position:absolute; top:3%; width:100%; height:12%;">
+                	<div id="back5" style="height:99%; width:25%; cursor:pointer;">
+                    	<img style="width:100%; height:100%;" src="book2img/back.png">
+                    </div>
+                    <div style="position:absolute; width:100%; bottom:0; height:1px; color:#F9F9F9; border-bottom:#F9F9F9 1px solid;"></div>
+                </div>   
+                <div id="menu5" style="position:absolute; width:100%; height:80%; top:30%;">
+     			<div  style=" position:absolute; left:20%; height:30%; width:60%; cursor:pointer;" data-num="1">
+                	<img style="position:absolute; left:10%;width:100%; height:80%; background-size:contain; background-repeat:no-repeat;"  src="book2img/jumpto.png"></div>
+                    <input style=" position:absolute; top:28%; left:24%; height:20%; width:48%;">
+                    <button id="book2pagesure">确定</button>
+                    <button id="book2pagecancel">取消</button>
+                </div>          
+ </div>       
+ 
+       
+<script type="text/javascript">	
+/*真人发音*****************************************************************************/
+var readflag = 0;
+var em = document.createElement("embed");
+//$('#articlevideopic').bind('click',function(){
+/*function playarticlevideo(){
+	if(readflag == 1){
+	$('#articlevoice').remove(); readflag = 0;}
+	else{	
+    var articlenum = num;
+	if(temp!=articlenum){
+		$('#articlevoice').remove();
+		em = document.createElement("embed");
+		em.autostart="1" ;
+		em.id="articlevoice";
+		em.src="voiceofbook/"+articlenum+".mp3";   //你的声音地址
+		em.height = 0;
+		em.width = 0;
+		document.documentElement.appendChild(em);
+		readflag = 1;
+	}
+	else{
+		em.autostart="1" ;
+		em.id="articlevoice";
+		em.src="voiceofbook/"+articlenum+".mp3";   //你的声音地址
+		em.height = 0;
+		em.width = 0;
+		document.documentElement.appendChild(em);
+		//alert(em.id);
+		var temp = articlenum;
+		readflag = 1;
+		}
+	}
+	}
+//);
+*/
+
+var articlereadflag = 0;var chunjieflag = 0;
+function playarticlevideo2(){
+	
+	if(articlereadflag==0){
+		if(readflag==1){$('#articlevoice').remove(); readflag = 0;}
+		var em = document.createElement("embed");
+		em.autostart="1" ;
+		em.id="articlevoice";
+		em.src="voiceofbook/dongjie.mp3";   //你的声音地址
+		em.height = 0;
+		em.width = 0;
+		document.documentElement.appendChild(em);
+		document.getElementById('dongjievideo').src="pics/video2.png";
+		articlereadflag=1;}
+		else{$('#articlevoice').remove();
+		document.getElementById('dongjievideo').src="pics/video1.png"; articlereadflag = 0;}
+	}
+
+
+
+$(document).ready(function(){
+//function playchunjie(){
+	$('#chunjievideo').bind('click',function(){
+	if(chunjieflag==0){
+		if(readflag==1){$('#articlevoice').remove(); readflag = 0;}
+		var em = document.createElement("embed");
+		em.autostart="1" ;
+		em.id="articlevoice";
+		em.src="voiceofbook/chunjie.mp3";   //你的声音地址
+		em.height = 0;
+		em.width = 0;
+		document.documentElement.appendChild(em);
+		document.getElementById('articlepic1').src="pics/video2.png";
+		chunjieflag=1;}
+		else{$('#articlevoice').remove();
+		document.getElementById('articlepic1').src="pics/video1.png"; chunjieflag = 0;}});
+	});
+
+var qingmingflag = 0;
+function playqingming(){
+	
+	if(qingmingflag==0){
+		if(readflag==1){$('#articlevoice').remove(); readflag = 0;}
+		var em = document.createElement("embed");
+		em.autostart="1" ;
+		em.id="articlevoice";
+		em.src="voiceofbook/qingming.mp3";   //你的声音地址
+		em.height = 0;
+		em.width = 0;
+		document.documentElement.appendChild(em);
+		document.getElementById('articlepic2').src="pics/video2.png";
+		qingmingflag=1;}
+		else{$('#articlevoice').remove();
+		document.getElementById('articlepic2').src="pics/video1.png"; qingmingflag = 0;}
+	}
+
+var laoyeflag = 0;
+function playlaoye(){
+	
+	if(laoyeflag==0){
+		if(readflag==1){$('#articlevoice').remove(); readflag = 0;}
+		var em = document.createElement("embed");
+		em.autostart="1" ;
+		em.id="articlevoice";
+		em.src="voiceofbook/laoye.mp3";   //你的声音地址
+		em.height = 0;
+		em.width = 0;
+		document.documentElement.appendChild(em);
+		document.getElementById('articlepic3').src="pics/video2.png";
+		laoyeflag=1;}
+		else{$('#articlevoice').remove();
+		document.getElementById('articlepic3').src="pics/video1.png"; laoyeflag = 0;}
+	}	
+	
+var huayuanflag = 0;
+function playhuayuan(){
+	
+	if(huayuanflag==0){
+		if(readflag==1){$('#articlevoice').remove(); readflag = 0;}
+		var em = document.createElement("embed");
+		em.autostart="1" ;
+		em.id="articlevoice";
+		em.src="voiceofbook/huayuan.mp3";   //你的声音地址
+		em.height = 0;
+		em.width = 0;
+		document.documentElement.appendChild(em);
+		document.getElementById('articlepic4').src="pics/video2.png";
+		huayuanflag=1;}
+		else{$('#articlevoice').remove();
+		document.getElementById('articlepic4').src="pics/video1.png"; huayuanflag = 0;}
+	}
+/*合上书本/打开书本*******************************************************************************/
+var num = 1;
+$('#choiceselect').change(function(){
+		var status = $(this).val();
+		//alert(status);
+		if(status == "open"){
+			if(num==1){
+			$('.magazine').turn('page', 2);}
+			else{}
+			}
+		else{
+			//alert(status);$('.magazine').turn('page', 1);
+			if(num==12){}
+			$('.magazine').turn('page', 1);
+		}
+	});    	
+
+
+/*书页定时跳转*******************************************************************************/	
+var clock;
+function settime(){
+	 var time = document.getElementById('inputtime').value;
+	 alert("书本将每"+time+"分钟进行翻页！");
+	 time = parseFloat(time)*1000*60;
+	 showtimedialog();
+	 var i = num;
+	 clock = setInterval(Start,time);
+	 
+	function Start(){
+		$('.magazine').turn('page', i);
+		i = parseInt(i) + 1;
+	}
+}	
+
+function nosettime(){
+	 //清除setInterval
+     clearInterval(clock);
+	 showtimedialog();
+	 alert("已取消自动翻阅！");
+	}
+
+/*
+var i = 1;
+window.onload = function(){
+setInterval(Start,5000);
+}
+function Start(){
+	$('.magazine').turn('page', i);
+	i = parseInt(i) + 1;
+}
+*/
+
+var timeflag = 0;
+function limitime(){
+	if(timeflag == 0){showtimedialog(); document.getElementById("stop").src = "pics/start.png"; timeflag=1;}
+	else{  nosettime(); document.getElementById("stop").src = "pics/stop.png";  timeflag=0;}
+	}
+
+
+/*书本手动翻页*******************************************************************************/	
+function loadApp() {
+ 	$('#canvas').fadeIn(1000);
+ 	var flipbook = $('.magazine');
+ 	// Check if the CSS was already loaded	
+	if (flipbook.width()==0 || flipbook.height()==0) {
+		setTimeout(loadApp, 10);
+		return;
+	}	
+	// 创建flipbook
+	flipbook.turn({		
+			width: 1000,
+  			height: 700,
+			duration: 1000,   //翻页速度，值越小越快
+			// Hardware acceleration
+			acceleration: !isChrome(),
+			// Enables gradients
+			gradients: true,			
+			// Auto center this flipbook
+			autoCenter: true,
+			// Elevation from the edge of the flipbook when turning a page
+			elevation: 50,
+			// The number of pages
+			pages: 12,
+			// Events
+			when: {
+				turning: function(event, page, view) {
+					num = page;	
+					//alert(num);		
+					var book = $(this),
+					currentPage = book.turn('page'),
+					pages = book.turn('pages');			
+					// Update the current URI
+					Hash.go('page/' + page).update();
+					// Show and hide navigation buttons
+					disableControls(page); 	
+					
+					$('#articlevoice').remove();
+					readflag2 = 0;
+					readflag = 0;
+						
+					
+					/*翻页产生的声音*******************************************************************************/
+					var em = document.createElement("embed"); 
+					em.autostart="1" ;
+					em.src="sounds/02.mp3";   //你的声音地址
+					em.height = 0;
+					em.width = 0;
+					document.documentElement.appendChild(em);	
+							
+				},
+				turned: function(event, page, view) {
+					disableControls(page);
+					$(this).turn('center');
+					if (page==1) { 
+						$(this).turn('peel', 'br');
+					}
+						
+				},
+				missing: function (event, pages) {
+					// Add pages that aren't in the magazine
+					for (var i = 0; i < pages.length; i++)
+						addPage(pages[i], $(this));
+						//alert(i);
+				}
+			}
+			
+			
+	});
+
+	// Zoom.js
+	$('.magazine-viewport').zoom({
+		flipbook: $('.magazine'),
+		max: function() { 			
+			return largeMagazineWidth()/$('.magazine').width();
+		}, 
+		when: {
+			swipeLeft: function() {
+				$(this).zoom('flipbook').turn('next');
+			},
+			swipeRight: function() {				
+				$(this).zoom('flipbook').turn('previous');
+			},
+
+			resize: function(event, scale, page, pageElement) {
+				/*if (scale==1)
+					loadSmallPage(page, pageElement);
+				else
+					loadLargePage(page, pageElement);*/
+			},
+			zoomIn: function () {
+				/*$('.made').hide();
+				$('.magazine').removeClass('animated').addClass('zoom-in');
+				//$('.magazine').addClass('animated');
+				$('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');	
+				//$('.zoom-icon').addClass('zoom-icon-in');				
+				if (!window.escTip && !$.isTouch) {
+					escTip = true;
+					$('<div />', {'class': 'exit-message'}).
+						html('<div>Press ESC to exit</div>').
+							appendTo($('body')).
+							delay(2000).
+							animate({opacity:0}, 500, function() {
+								$(this).remove();
+							});
+				}*/
+			},
+			zoomOut: function () {
+				/*$('.exit-message').hide();
+				$('.thumbnails').fadeIn();
+				$('.made').fadeIn();
+				$('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
+				setTimeout(function(){
+					$('.magazine').addClass('animated').removeClass('zoom-in');
+					resizeViewport();
+				}, 0);*/
+			}
+		}
+	});
+
+	// Zoom event
+	if ($.isTouch)
+		$('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
+	else
+		$('.magazine-viewport').bind('zoom.tap', zoomTo);
+	// Using arrow keys to turn the page
+	$(document).keydown(function(e){
+		var previous = 37, next = 39, esc = 27;
+		switch (e.keyCode) {
+			case previous:
+				// left arrow
+				$('.magazine').turn('previous');
+				e.preventDefault();
+			break;
+			case next:
+				//right arrow
+				$('.magazine').turn('next');
+				e.preventDefault();
+			break;
+			case esc:				
+				$('.magazine-viewport').zoom('zoomOut');	
+				e.preventDefault();
+			break;
+		}
+	});
+
+	// URIs - Format #/page/1 
+	Hash.on('^page\/([0-9]*)$', {
+		yep: function(path, parts) {
+			var page = parts[1];
+			if (page!==undefined) {
+				if ($('.magazine').turn('is'))
+					$('.magazine').turn('page', page);
+			}
+		},
+		nop: function(path) {
+			if ($('.magazine').turn('is'))
+				$('.magazine').turn('page', 1);
+		}
+	});
+	$(window).resize(function() {
+		resizeViewport();
+	}).bind('orientationchange', function() {
+		resizeViewport();
+	});
+	
+	// Events for thumbnails
+	$('.thumbnails').click(function(event) {		
+		var page;
+		if (event.target && (page=/page-([0-9]+)/.exec($(event.target).attr('class'))) ) {		
+			$('.magazine').turn('page', page[1]);
+		}
+	});
+	$('.thumbnails li').
+		bind($.mouseEvents.over, function() {			
+			$(this).addClass('thumb-hover');
+
+		}).bind($.mouseEvents.out, function() {
+			
+			$(this).removeClass('thumb-hover');
+
+		});
+
+	if ($.isTouch) {	
+		$('.thumbnails').
+			addClass('thumbanils-touch').
+			bind($.mouseEvents.move, function(event) {
+				event.preventDefault();
+			});
+	} else {
+		$('.thumbnails ul').mouseover(function() {
+			$('.thumbnails').addClass('thumbnails-hover');
+		}).mousedown(function() {
+			return false;
+		}).mouseout(function() {
+			$('.thumbnails').removeClass('thumbnails-hover');
+		});
+	}
+
+	// Regions
+	if ($.isTouch) {
+		$('.magazine').bind('touchstart', regionClick);
+	} else {
+		$('.magazine').click(regionClick);
+	}
+
+	// Events for the next button
+	$('.next-button').bind($.mouseEvents.over, function() {		
+		$(this).addClass('next-button-hover');
+	}).bind($.mouseEvents.out, function() {		
+		$(this).removeClass('next-button-hover');
+	}).bind($.mouseEvents.down, function() {		
+		$(this).addClass('next-button-down');
+	}).bind($.mouseEvents.up, function() {		
+		$(this).removeClass('next-button-down');
+	}).click(function() {
+		$('.magazine').turn('next');
+		setTimeout(function(){
+		setArrows() ;
+		},300);
+	});
+	 
+
+	// Events for the next button	
+	$('.previous-button').bind($.mouseEvents.over, function() {		
+		$(this).addClass('previous-button-hover');
+	}).bind($.mouseEvents.out, function() {		
+		$(this).removeClass('previous-button-hover');
+	}).bind($.mouseEvents.down, function() {		
+		$(this).addClass('previous-button-down');
+	}).bind($.mouseEvents.up, function() {		
+		$(this).removeClass('previous-button-down');
+	}).click(function() {		
+		$('.magazine').turn('previous');
+		setTimeout(function(){
+		setArrows() ;
+		},300);
+
+	});
+	
+	
+	resizeViewport();
+	$('.magazine').addClass('animated');
+}
+
+// Zoom icon
+ $('.zoom-icon').bind('mouseover', function() {  	
+ 	if ($(this).hasClass('zoom-icon-in'))
+ 		$(this).addClass('zoom-icon-in-hover');
+ 	if ($(this).hasClass('zoom-icon-out'))
+ 		$(this).addClass('zoom-icon-out-hover'); 
+ }).bind('mouseout', function() {  	
+ 	 if ($(this).hasClass('zoom-icon-in'))
+ 		$(this).removeClass('zoom-icon-in-hover'); 	
+ 	if ($(this).hasClass('zoom-icon-out'))
+ 		$(this).removeClass('zoom-icon-out-hover');
+ }).bind('click', function() {
+ 	if ($(this).hasClass('zoom-icon-in'))
+ 		$('.magazine-viewport').zoom('zoomIn');
+ 	else if ($(this).hasClass('zoom-icon-out'))	
+		$('.magazine-viewport').zoom('zoomOut');
+ });
+ $('#canvas').hide();
+
+// Load the HTML4 version if there's not CSS transform
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['js/turn.js'],
+	nope: ['js/turn.html4.min.js'],
+	both: ['js/zoom.min.js', 'js/magazine.js'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+
+</html>
+
